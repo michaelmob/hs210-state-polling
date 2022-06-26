@@ -3,4 +3,4 @@ services:
   hs210:
     build: .
     volumes:
-      - .:/app
+      - /mnt/appdata/hs210:/app
