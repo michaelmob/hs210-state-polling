@@ -20,7 +20,7 @@ On device state change event.
 """
 def on_change(name, state, notify=True):
   on_or_off = "ON" if state else "OFF"
-  content = f"{name} turned {on_or_off} at {datetime.today()}"
+  content = f"{name} turned {on_or_off}"
   if notify:
     send_message(BOT_TOKEN, CHAT_ID, content)
   print(content)
