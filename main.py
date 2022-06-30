@@ -23,7 +23,7 @@ def on_change(name, state, notify=True):
   content = f"{name} turned {on_or_off}"
   if notify:
     send_message(BOT_TOKEN, CHAT_ID, content)
-  print(content)
+  print(f"{content} at {datetime.today()}")
 
 
 """
