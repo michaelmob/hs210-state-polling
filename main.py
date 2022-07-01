@@ -49,7 +49,7 @@ async def main_loop():
     await plug.update()
     if plug.is_on != plug.was_on:
       plug.was_on = plug.is_on
-      on_change(plug.is_on)
+      on_change(plug.alias, plug.is_on)
     await sleep(1)
 
 
